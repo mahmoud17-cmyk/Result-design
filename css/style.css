@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --Lightred: hsl(0, 100%, 67%);
+  --Orangeyyellow: hsl(39, 100%, 56%);
+  --Greenteal: hsl(166, 100%, 37%);
+  --Cobaltblue: hsl(234, 85%, 45%);
+  --White: hsl(0, 0%, 100%);
+  --Paleblue: hsl(221, 100%, 96%);
+  --Lightlavender: hsl(241, 100%, 89%);
+  --Darkgrayblue: hsl(224, 30%, 27%);
+  --Lightslatebluebackground: hsl(252, 100%, 67%);
+  --Lightroyalbluebackground: hsl(241, 81%, 54%);
+
+  --Violetbluecircle: hsla(256, 72%, 46%, 1);
+  --Persianbluecircle: hsla(241, 72%, 46%, 0);
+}
+
+body {
+  font-size: 18px;
+  display: flex;
+  font-family: "Hanken Grotesk", sans-serif;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+section {
+}
+section .container {
+  display: flex;
+}
+@media (max-width: 767px) {
+  section .container {
+    flex-direction: column;
+  }
+  body {
+    align-items: flex-start;
+    padding-top: -10px;
+  }
+  section .container .right {
+  }
+}
+section .container .left {
+  flex-basis: 50%;
+  background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+  text-align: center;
+  padding: 25px;
+  border-radius: 20px;
+  align-content: center;
+  color: white;
+  max-width: 370px;
+}
+section .container .left > h3 {
+  margin-bottom: 35px;
+  font-weight: normal;
+  opacity: 0.8;
+}
+section .container .left .circle {
+  background-color: hsl(234, 85%, 56%);
+  border-radius: 50%;
+  width: fit-content;
+  margin: auto;
+  padding: 45px;
+}
+section .container .left .circle .span1 {
+  display: block;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+section .container .left .info {
+  padding-top: 35px;
+}
+section .container .left .info > h3 {
+  padding-bottom: 5px;
+  font-weight: 500;
+  letter-spacing: 1.7px;
+}
+section .container .left .info p {
+  font-size: 0.9em;
+  color: var(--Lightlavender);
+  margin-top: 10px;
+}
+section .container .right {
+  padding: 35px;
+  background-color: var(--White);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
+  z-index: -1;
+  flex-basis: 55%;
+}
+section .container .right .boxes {
+  align-content: center;
+  padding-top: 10px;
+}
+section .container .right .boxes .box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  padding: 12px;
+  border-radius: 8px;
+}
+section .container .right .boxes .box .content {
+  display: flex;
+}
+section .container .right .boxes .box img {
+  margin-right: 15px;
+}
+section .container .right .boxes .box1 {
+  background-color: hsl(0deg 100% 67% / 10%);
+}
+section .container .right .boxes .box1 p {
+  color: var(--Lightred);
+}
+section .container .right .boxes .box2 {
+  background-color: hsl(39deg 100% 56% / 10%);
+}
+section .container .right .boxes .box2 p {
+  color: var(--Orangeyyellow);
+}
+section .container .right .boxes .box3 {
+  background-color: hsl(166deg 100% 37% / 10%);
+}
+section .container .right .boxes .box3 p {
+  color: var(--Greenteal);
+}
+section .container .right .boxes .box4 {
+  background-color: hsl(234deg 85% 45% / 10%);
+}
+section .container .right .boxes .box4 p {
+  color: var(--Cobaltblue);
+}
+section .container .right a {
+  margin: auto;
+  display: block;
+  padding: 15px;
+  width: 95%;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  /* font-weight: bold; */
+  color: white;
+  background-color: var(--Darkgrayblue);
+  transition: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+/* section .container .right a:hover {
+  background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+} */
